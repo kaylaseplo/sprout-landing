@@ -9,7 +9,7 @@ const PAIN_POINTS = [
   },
   {
     icon: '🧠',
-    text: 'What works with which kid lives in your head — and leaves when you do',
+    text: 'When a great teacher leaves, everything they learned leaves too',
   },
   {
     icon: '🌱',
