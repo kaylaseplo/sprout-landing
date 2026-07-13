@@ -7,12 +7,12 @@
   --green: #3f7a5a;
   --green-dark: #2c5940;
   --green-soft: #e6f2ea;
-  --coral: #f2793d;
-  --coral-dark: #d9622a;
+  --coral: #b84b14;
+  --coral-dark: #9c4011;
   --border: #ede3d2;
 
-  --font-heading: 'Fredoka', system-ui, sans-serif;
-  --font-body: 'Nunito', system-ui, sans-serif;
+  --font-heading: 'Manrope', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
 
   color-scheme: light;
   color: var(--ink-soft);
@@ -146,7 +146,7 @@ svg {
 .btn-primary {
   background: var(--coral);
   color: #fff8ee;
-  box-shadow: 0 10px 24px -8px rgba(242, 121, 61, 0.55);
+  box-shadow: 0 10px 24px -8px rgba(184, 75, 20, 0.5);
 }
 
 .btn-primary:hover {
@@ -176,5 +176,35 @@ svg {
 @media (min-width: 1024px) {
   .section {
     padding-block: 100px;
+  }
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 12px;
+  z-index: 50;
+  background: var(--ink);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  text-decoration: none;
+  transition: top 0.15s ease;
+}
+
+.skip-link:focus-visible {
+  top: 12px;
+  outline: 3px solid var(--coral);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
   }
 }

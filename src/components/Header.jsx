@@ -8,9 +8,11 @@ function Header() {
           </span>
           Sprout
         </a>
-        <a href="#signup" className="btn btn-primary header-cta">
-          Get early access
-        </a>
+        <nav aria-label="Primary">
+          <a href="#signup" className="btn btn-primary header-cta">
+            Get early access
+          </a>
+        </nav>
       </div>
     </header>
   )
